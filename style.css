@@ -1,0 +1,16 @@
+body {
+	--x: 0px;
+	--y: 0px;
+	image-rendering: pixelated;
+	background: url(images/spacebg1.png), url(images/spacebg2.png), url(images/spacebg3.png);
+	background-blend-mode: screen, screen, screen;
+    background-repeat: repeat, repeat, repeat;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width: 40%;
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Space</title>
+        <link rel="stylesheet" href="style.css">
+        <style> 
+            .escapepod {
+            position: relative;
+            animation-name: escapepod;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            }
+            
+            @keyframes escapepod {
+            0%   {left:0%; top:400px;}
+            100% {left:110%; top:400px;}
+            }
+
+            .syndiepod {
+            position: relative;
+            animation-name: syndiepod;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            }
+
+            @keyframes syndiepod{
+            0%  { left: 10%; top: 100px;}
+            50% { left: 100%; top: -400px; }
+            75% { left: 10%; top: -600px;}
+            100% { left: 10%; top: 100px;}
+            }
+
+            </style> 
+    </head>
+
+    <body>
+        <div class="escapepod">
+            <img src="images/escapepod.png" alt="occupied small escape pod" width="160"
+            height = "160">
+        </div>
+
+        <div class="logo">
+            <img src="images/hippielogo.png" alt="hippie logo"> <!--This is a weird workaround solution.
+            Basically I wanted the logo centered, however I'm not quite sure how to do that properly. What I did
+            instead was just move the div containing the logo in between the other two divs, forcing it to be somewhat
+            in the middle vertically. The horizontal centering is handled with css.-->
+        </div>
+
+        <div class="syndiepod">
+            <img src="images/syndiepod.png" alt="syndicate pod" width="480" height="480">
+        </div>
+
+
+    </body>
+</html>
